@@ -1,0 +1,655 @@
+
+
+.muja {
+  position: relative; /* Ensure that the h3 element is positioned relative to muja */
+
+}
+
+.muja h3 {
+  position: absolute;
+  top:0;
+  left: 0;
+  margin: 0; /* Remove any default margin */
+  padding: -1px; /* Add some padding if needed */
+  font-size: 1.43rem; /* Adjust font size as necessary */
+  margin: 13px;
+  
+    color: #161c3b; /* A lighter gray shade for reduced contrast */
+    font-family: Poppins, sans-serif;
+    font-weight: 400
+    
+;
+  
+
+}
+
+
+
+.no-records {
+  text-align: center;
+  padding: 20px;
+}
+
+.no-records img {
+  max-width: 100%;
+  height: 390px;
+  margin: 0 auto;
+}
+
+body, .taskboard-container1 {
+  overflow-y: hidden; 
+  overflow-x: hidden;
+  height: 100vh; 
+ 
+}
+.taskboard-card h2 {
+  margin: 0;
+}
+
+.taskboard-card .p {
+  margin: 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  font-family: Poppins, sans-serif;
+}
+
+.description-text {
+  position: relative;
+  padding-left: 1%;
+}
+
+.taskboard-card .end-date {
+  position: absolute;
+  right: 16px;
+  font-family: Poppins, sans-serif;
+}
+
+.task-description {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #A7D0FF;
+}
+
+.task-detail {
+  position: relative;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #C9D4F7;
+}
+
+.task-detail::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 15px;
+  background-color: #A2A9CC;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.task-detail span {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.taskboard-download-button {
+  background-color: #7443C5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.taskboard-download-button:hover {
+  background-color: #4682B4;
+}
+
+.muja {
+  
+  background-color: white;
+  padding: 30px;
+  border-radius: 13px;
+  width: calc(100% - 23px);
+  margin: 20px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+  max-height: 500px;
+  overflow-y: scroll;
+  margin-left: -0.9%;
+  position: relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  
+}
+
+.taskboard-cards {
+  padding: 10px;
+}
+
+
+
+
+
+
+.bg {
+  transition: transform 0.3s ease;
+  overflow: -moz-hidden-unscrollable;
+ 
+}
+
+.shift-right {
+  transform: translateX(250px);
+}
+
+
+
+.menu-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+}
+
+.taskboard-menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 3%;
+}
+
+.taskboard-menu .fab {
+  margin-right: 10px;
+}
+
+.taskboard-menu .tm {
+  margin-left: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  color: #fff;
+}
+
+.menu-button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+.taskboard-menu .MuiFab-root {
+  margin-right: 10px;
+  background-color: #D7E8FA;
+}
+
+
+
+
+
+
+
+.bg {
+  background-color: #dfdfdf;
+ 
+}
+
+.taskboard-filter-button {
+  font-size: 19px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.task-filters {
+  margin-bottom: 20px;
+}
+
+.task-filter-button {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.taskboard-card {
+  cursor: pointer;
+  background-color: #D7E8FA;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%; /* Adjusted to full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin-left: -0%;
+  height: auto; /* Adjusted for variable height */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 8px;
+}
+
+.taskboard-card:hover {
+  background-color: #B0D4F8; /* Change the background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect on hover */
+  transform: scale(1.02); /* Slightly scale up the card on hover */
+  transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+
+.taskboard-container1 {
+  width: 100%;
+  padding: 1.2rem;
+  
+  margin: 0 auto;
+  background-color: #dfdfdf;
+  overflow-x: hidden;
+  overflow-y: hidden; /* Prevent horizontal scrolling */
+}
+
+.taskboard-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.taskboard-card h2 {
+  margin: 0;
+}
+
+
+.taskboard-card .p {
+  margin: 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+
+  
+}
+.description-text {
+  position: relative;
+   padding-left: 1%;
+}
+
+
+.taskboard-card .end-date {
+  position: absolute;
+ 
+  right: 16px;
+}
+
+
+
+
+.task-description {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #A7D0FF;
+}
+
+.task-detail {
+  position: relative;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #C9D4F7;
+}
+
+.task-detail::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 15px;
+  background-color: #A2A9CC;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.task-detail span {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.taskboard-download-button {
+  background-color: #7443C5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.taskboard-download-button:hover {
+  background-color: #4682B4;
+}
+
+.taskboard-card {
+  background-color: #D7E8FA;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 10px;
+  position: relative;
+
+  width: 100%;
+
+  
+}
+
+.taskboard-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.taskboard-card.completed::after {
+  background-color: #1AB30D;
+}
+
+.taskboard-card.incomplete::after {
+  background-color: #FC2222;
+}
+
+.taskboard-card.overdue::after {
+  background-color: #FF7A00;
+}
+
+.muja {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #0000001a;
+  height: 73%;
+  margin: 1.7rem auto 20px -.9%;
+  max-height: 500px;
+  min-height: 200px;
+  overflow-y: scroll;
+  padding: 30px;
+  position: relative;
+  width: calc(100% - 35px);
+  margin-top:3%;
+  padding-right: 2%;
+  
+}
+
+.taskboard-cards {
+  padding: 10px;
+  margin-top: 25px;
+}
+
+
+
+
+
+
+.search-input {
+  color: white;
+  
+  width: 250px;
+}
+
+
+
+
+
+.shift-right {
+  transform: translateX(250px);
+}
+
+.taskboard-container {
+  position: relative;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.menu-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+}
+
+.taskboard-menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 3%;
+}
+
+.taskboard-menu .fab {
+  margin-right: 10px;
+}
+
+.taskboard-menu .tm {
+  margin-left: auto;
+}
+
+
+
+.menu-button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+
+.taskboard-menu .MuiFab-root {
+  margin-right: 10px;
+  background-color: #D7E8FA;
+}
+
+
+.search-bar {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  width: 200px;
+  padding: 5px;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+.bg {
+  background-color: #dfdfdf;
+}
+
+.taskboard-filter-button {
+  font-size: 19px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.task-filters {
+  margin-bottom: 20px;
+}
+
+.task-filter-button {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.taskboard-card {
+  background-color: #D7E8FA;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 11px;
+  width: 100%; /* Ensure the card takes up the full width of its container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin-left: -0%;
+  height: 97px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 8px;
+overflow: hidden;
+
+
+}
+
+
+.taskboard-container1 {
+  background-color: var(--bg);
+  height: 100vh;
+  padding: 2rem;
+  width: 100%;
+  padding-top: 1%;
+}
+
+
+.taskboard-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.taskboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.taskboard-grid-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.taskboard-grid-item:hover {
+  background-color: #CCCCCC;
+}
+
+.task-detail {
+  padding: 10px;
+}
+
+.task-detail p {
+  margin: 5px 0;
+}
+
+.taskboard-download-button {
+  width: auto;
+  align-content: center;
+  margin-left: auto;
+  padding: 8px 16px;
+  background-color: #5865cb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.taskboard-download-button:hover {
+  background-color: #4853a4;
+}
+
+.task-description {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description-heading {
+  font-weight: bold;
+}
+
+.tm {
+  margin-right: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .taskboard-card {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .taskboard-download-button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .menu-button {
+    top: 10px;
+    right: 10px;
+  }
+
+  .search-bar {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .taskboard-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .taskboard-menu .fab {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .taskboard-menu .tm {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .taskboard-menu {
+    margin-bottom: 20px;
+  }
+
+  .taskboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .taskboard-download-button {
+    padding: 10px;
+  }
+
+
+}
